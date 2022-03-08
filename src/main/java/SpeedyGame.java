@@ -1,8 +1,8 @@
 public class SpeedyGame extends Game {
-    private int maxSpeed;
+    protected int maxSpeed;
 
     public SpeedyGame(boolean isGreenLight, int maxSpeed) {
-        super(isGreenLight);
+        super(true);
         this.maxSpeed = maxSpeed;
     }
 
