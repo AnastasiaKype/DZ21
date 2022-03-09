@@ -2,8 +2,12 @@ public class Game {
 
     private boolean isGreenLight;
 
-    public Game(boolean isGreenLight) {
+    protected Game() {
         this.isGreenLight = false;
+    }
+
+    public Game(boolean isGreenLight) {
+        this.isGreenLight = isGreenLight;
     }
 
     public boolean getSpeed() {
@@ -16,16 +20,13 @@ public class Game {
 
     public boolean isFailed(int speed) {
 
-        boolean isFailed = false;
-        if (isGreenLight = false) {
+        if (isGreenLight == false) {
+            if (speed !=0){
 
-            if (speed != 0) {
-
-                isFailed = true;
-
-            }
-
-        }  return true;
+            } return true;
+        } else {
+            return false;
+        }
 
     }
 }
