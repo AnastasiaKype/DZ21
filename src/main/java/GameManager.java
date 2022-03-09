@@ -14,7 +14,7 @@ public class GameManager {
         this.game = game;
     }
 
-    Game game = new Game();
+    Game game = new Game(true);
 
 
     public int rounds(int[] speeds) {

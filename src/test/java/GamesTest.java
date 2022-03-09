@@ -8,7 +8,7 @@ public class GamesTest {
   public void GameTest() {
         Game Game = new Game(true);
 
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = Game.isFailed(5);
 
         Assertions.assertEquals(expected, actual);
@@ -19,7 +19,7 @@ public class GamesTest {
     public void GameTest0() {
         SpeedyGame SpeedyGame = new SpeedyGame(true, 3);
 
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = SpeedyGame.isFailed(5);
 
         Assertions.assertEquals(expected, actual);
