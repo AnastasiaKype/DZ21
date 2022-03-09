@@ -16,16 +16,17 @@ public class Game {
 
     public boolean isFailed(int speed) {
 
-        boolean isFailed = false;
-        if (isGreenLight = false) {
+
+        if (isGreenLight == false) {
 
             if (speed != 0) {
 
-                isFailed = true;
-
             }
+            return true;
 
-        }  return true;
+        } else {
+            return false;
+        }
 
     }
 }
