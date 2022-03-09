@@ -2,7 +2,7 @@ public class SpeedyGame extends Game {
     protected int MaxSpeed;
 
     public SpeedyGame(boolean isGreenLight, int MaxSpeed) {
-        super(true);
+        super(isGreenLight);
         this.MaxSpeed = MaxSpeed;
     }
 
@@ -10,18 +10,16 @@ public class SpeedyGame extends Game {
         return MaxSpeed;
     }
 
-    public void setMaxSpeed(int newMaxSpeed) {
-        MaxSpeed = newMaxSpeed;
+    public void setMaxSpeed(int MaxSpeed) {
+        this.MaxSpeed = MaxSpeed;
     }
 
     @Override
     public boolean isFailed(int speed) {
 
-        boolean maxFailed = false;
-        if (getSpeed() == false) {
-            if (speed > MaxSpeed){
 
-            } return true;
+        if ((getIsGreenLight() == false)&&(speed > MaxSpeed)) {
+            return true;
         } else {
             return false;
         }

@@ -1,21 +1,17 @@
 public class Game {
 
-    private boolean isGreenLight;
-
-    protected Game() {
-        this.isGreenLight = false;
-    }
+    protected boolean isGreenLight;
 
     public Game(boolean isGreenLight) {
         this.isGreenLight = isGreenLight;
     }
 
-    public boolean getSpeed() {
+    public boolean getIsGreenLight() {
         return isGreenLight;
     }
 
-    public void setSpeed(boolean newLight) {
-        isGreenLight = newLight;
+    public void setIsGreenLight(boolean newIsGreenLight) {
+        isGreenLight = newIsGreenLight;
     }
 
     public boolean isFailed(int speed) {

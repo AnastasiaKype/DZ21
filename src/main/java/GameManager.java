@@ -1,6 +1,6 @@
 public class GameManager {
 
-    private int[] speeds;
+    protected int[] speeds;
 
     public int[] getSpeeds() {
         return speeds;
@@ -22,8 +22,10 @@ public class GameManager {
         int sum = 0;
 
         for (int round : speeds) {
-            if (round == 0) {
+            if (game.isFailed(round) == false) {
                 sum++;
+            } else {
+               round++;
             }
         } return sum;
     }
